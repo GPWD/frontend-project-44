@@ -3,3 +3,4 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/c3377ae48ecf390d79de/maintainability)](https://codeclimate.com/github/GPWD/frontend-project-44/maintainability)
 Link to game demo brain-even  https://asciinema.org/a/629335
 Link to game demo brain-calc  https://asciinema.org/a/630304
+Link to game demo brain-gcd https://asciinema.org/a/vNybHqoTaOQJYwp8KxZuJLuX6
