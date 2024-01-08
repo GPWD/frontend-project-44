@@ -29,7 +29,7 @@ const getRandomExpression = () => {
   const listOpertions = ['+', '*', '-'];
 
   const expression = `${numberOne} ${listOpertions[randomIndex]} ${numberTwo}`;
-  const correctAnswer = String(сalculate(numberOne, listOpertions[randomIndex], numberTwo));
+  const correctAnswer = сalculate(numberOne, listOpertions[randomIndex], numberTwo);
 
   return [expression, correctAnswer];
 };
