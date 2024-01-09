@@ -6,8 +6,8 @@ const getRandomProgression = () => {
   const randomPosition = getRandomNumberInclusive(0, (progressionLength - 1));
   const progression = [];
 
-  for (let i = step; i <= (step * progressionLength); i += step) {
-    progression.push(i);
+  for (let num = step; num <= (step * progressionLength); num += step) {
+    progression.push(num);
   }
   const correctAnswer = progression[randomPosition];
   progression[randomPosition] = '..';
