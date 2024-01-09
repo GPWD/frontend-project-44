@@ -5,3 +5,4 @@ Link to game demo brain-even  https://asciinema.org/a/629335
 Link to game demo brain-calc  https://asciinema.org/a/630304
 Link to game demo brain-gcd https://asciinema.org/a/vNybHqoTaOQJYwp8KxZuJLuX6
 Link to game demo brain-progression https://asciinema.org/a/3b2lA3lM4svw9buQkuYBZ5I0q
+Link to game demo brain-prime https://asciinema.org/a/M7QK1OflsvGuV2z1HR9qxpElj
