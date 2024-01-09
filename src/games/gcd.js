@@ -1,8 +1,8 @@
-import getRandomNumber from '../helper.js';
+import getRandomNumberInclusive from '../helper.js';
 
 const getGreatestCommonDivisor = () => {
-  let numOne = getRandomNumber(50);
-  let numTwo = getRandomNumber(50);
+  let numOne = getRandomNumberInclusive(0, 50);
+  let numTwo = getRandomNumberInclusive(0, 50);
   const numbersForQuestion = `${numOne} ${numTwo}`;
 
   while (numOne > 0 && numTwo > 0) {
