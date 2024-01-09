@@ -1,4 +1,4 @@
-import getRandomNumber from '../helper.js';
+import getRandomNumberInclusive from '../helper.js';
 
 const сalculate = (operandOne, op, operandTwo) => {
   const operations = {
@@ -23,9 +23,9 @@ const сalculate = (operandOne, op, operandTwo) => {
 };
 
 const getRandomExpression = () => {
-  const numberOne = getRandomNumber(100);
-  const numberTwo = getRandomNumber(10);
-  const randomIndex = getRandomNumber(3);
+  const numberOne = getRandomNumberInclusive(0, 100);
+  const numberTwo = getRandomNumberInclusive(0, 10);
+  const randomIndex = getRandomNumberInclusive(0, 2);
   const listOpertions = ['+', '*', '-'];
 
   const expression = `${numberOne} ${listOpertions[randomIndex]} ${numberTwo}`;
