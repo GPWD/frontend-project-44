@@ -1,7 +1,7 @@
-import getRandomNumber from '../helper.js';
+import getRandomNumberInclusive from '../helper.js';
 
 const getOddOrEvenNumber = () => {
-  const randomNumber = getRandomNumber(100);
+  const randomNumber = getRandomNumberInclusive(0, 100);
   let correctAnswer;
 
   if (randomNumber % 2 === 0) {
