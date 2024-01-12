@@ -1,4 +1,5 @@
 import getRandomNumberInclusive from '../helper.js';
+import playGame from '../index.js';
 
 const primeNumber = () => {
   const randomNumber = getRandomNumberInclusive(0, 100);
@@ -16,4 +17,6 @@ const primeNumber = () => {
   return [randomNumber, correctAnswer];
 };
 
-export default primeNumber;
+const startPrimeNumberGame = () => playGame('Answer "yes" if given number is prime. Otherwise answer "no".', primeNumber);
+
+export default startPrimeNumberGame;
