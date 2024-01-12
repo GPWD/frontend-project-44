@@ -1,10 +1,9 @@
 import getRandomNumberInclusive from '../helper.js';
 import playGame from '../index.js';
 
-const getGreatestCommonDivisor = () => {
-  let numOne = getRandomNumberInclusive(0, 50);
-  let numTwo = getRandomNumberInclusive(0, 50);
-  const numbersForQuestion = `${numOne} ${numTwo}`;
+const findGreatestCommonDivisor = (operandOne, operandTwo) => {
+  let numOne = operandOne;
+  let numTwo = operandTwo;
 
   while (numOne > 0 && numTwo > 0) {
     if (numOne >= numTwo) {
@@ -13,7 +12,16 @@ const getGreatestCommonDivisor = () => {
       numTwo %= numOne;
     }
   }
-  const correctAnswer = Math.max(numOne, numTwo);
+
+  return Math.max(numOne, numTwo);
+};
+
+const getGreatestCommonDivisor = () => {
+  const randomNumOne = getRandomNumberInclusive(0, 50);
+  const randomNumTwo = getRandomNumberInclusive(0, 50);
+
+  const numbersForQuestion = `${randomNumOne} ${randomNumTwo}`;
+  const correctAnswer = findGreatestCommonDivisor(randomNumOne, randomNumTwo);
 
   return [numbersForQuestion, correctAnswer];
 };
