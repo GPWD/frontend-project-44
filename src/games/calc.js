@@ -1,4 +1,5 @@
 import getRandomNumberInclusive from '../helper.js';
+import playGame from '../index.js';
 
 const сalculate = (operandOne, op, operandTwo) => {
   const operations = {
@@ -34,4 +35,6 @@ const getRandomExpression = () => {
   return [expression, correctAnswer];
 };
 
-export default getRandomExpression;
+const startCalcGame = () => playGame('What is the result of the expression?', getRandomExpression);
+
+export default startCalcGame;
