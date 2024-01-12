@@ -3,13 +3,8 @@ import playGame from '../index.js';
 
 const getOddOrEvenNumber = () => {
   const randomNumber = getRandomNumberInclusive(0, 100);
-  let correctAnswer;
+  const correctAnswer = randomNumber % 2 === 0 ? 'yes' : 'no';
 
-  if (randomNumber % 2 === 0) {
-    correctAnswer = 'yes';
-  } else if (randomNumber % 2 !== 0) {
-    correctAnswer = 'no';
-  }
   return [randomNumber, correctAnswer];
 };
 
