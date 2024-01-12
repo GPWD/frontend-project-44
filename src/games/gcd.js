@@ -1,4 +1,5 @@
 import getRandomNumberInclusive from '../helper.js';
+import playGame from '../index.js';
 
 const getGreatestCommonDivisor = () => {
   let numOne = getRandomNumberInclusive(0, 50);
@@ -17,4 +18,6 @@ const getGreatestCommonDivisor = () => {
   return [numbersForQuestion, correctAnswer];
 };
 
-export default getGreatestCommonDivisor;
+const startGcdGame = () => playGame('Find the greatest common divisor of given numbers.', getGreatestCommonDivisor);
+
+export default startGcdGame;
