@@ -6,7 +6,7 @@ const playGame = (condition, questionData) => {
   console.log(`Hello, ${userName}`);
   console.log(`${condition}`);
 
-  for (let i = 0; i < 3; i += 1) {
+  for (let numRounds = 0; numRounds < 3; numRounds += 1) {
     const [question, correctAnswer] = questionData();
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
