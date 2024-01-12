@@ -1,4 +1,5 @@
 import getRandomNumberInclusive from '../helper.js';
+import playGame from '../index.js';
 
 const getRandomProgression = () => {
   const step = getRandomNumberInclusive(1, 50);
@@ -16,4 +17,6 @@ const getRandomProgression = () => {
   return [progressionToString, correctAnswer];
 };
 
-export default getRandomProgression;
+const startProgressionGame = () => playGame('What number is missing in the progression?', getRandomProgression);
+
+export default startProgressionGame;
