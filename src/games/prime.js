@@ -17,6 +17,6 @@ const primeNumber = () => {
   return [randomNumber, correctAnswer];
 };
 
-const startPrimeNumberGame = () => playGame('Answer "yes" if given number is prime. Otherwise answer "no".', primeNumber);
+const startPrimeGame = () => playGame('Answer "yes" if given number is prime. Otherwise answer "no".', primeNumber);
 
-export default startPrimeNumberGame;
+export default startPrimeGame;
