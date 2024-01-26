@@ -5,7 +5,7 @@ const primeNumber = () => {
   const randomNumber = getRandomNumberInclusive(0, 100);
   let correctAnswer;
 
-  if (randomNumber <= 2) {
+  if (randomNumber <= 1) {
     correctAnswer = 'no';
   }
 
